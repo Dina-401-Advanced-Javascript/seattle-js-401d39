@@ -1,0 +1,24 @@
+h1 {
+  color: rgb(82, 82, 82);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  padding: 20px;
+}
+a {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: inline-block;
+  padding: 8px;
+  background-color: #dddddd;
+  text-emphasis: bold;
+}
+a:visited{
+  color: #000;
+}

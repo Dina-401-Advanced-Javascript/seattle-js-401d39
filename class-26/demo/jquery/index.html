@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Demo</title>
+	<!-- create the handlebars template -->
 	<script id="stuff-template" type="text/x-handlebars-template">
 		<h3 id="words">{{words}}</h3>
 	</script>
@@ -17,15 +18,17 @@
 	</header>
 	<div>
 		<div id="stuff"></div>
-		<input id="wordsInput" /> <button id="clicker">Click Me</button>
-    </div>
-    <footer>&copy; 2018 Code Fellows</footer>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
-    <script src="/app.js"></script>
-  </body>
+		<input id="wordsInput" />
+		<button id="clickme">Click Me</button>
+	</div>
+	<footer>&copy; 2018 Code Fellows</footer>
+	<!-- bring in jquery lib -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<!-- bring in handlebars lib -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.12/handlebars.min.js"></script>
+
+	<script src="/app.js"></script>
+</body>
+
 </html>

@@ -3,6 +3,7 @@
 const supertest = require('supertest');
 const server = require('../server.js');
 const request = supertest(server.app);
+//why are we bringing in app? because we're going to use supertest to mock the server up and run the tests without running them against my actual live server
 
 describe('API Server', () => {
 

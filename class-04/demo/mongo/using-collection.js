@@ -22,7 +22,7 @@ const doDataStuff = async () => {
   console.log('Food Created', newFood);
 
   // Getting one, just gives you an object that is the one
-  let oneFood = await food.get(food.id);
+  let oneFood = await food.get(food._id);
   console.log('One Food', oneFood);
 
   // Getting all ... an array!

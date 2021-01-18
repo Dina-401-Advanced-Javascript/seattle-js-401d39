@@ -28,6 +28,15 @@ function render() {
   $('#stuff').html(template(state));
 }
 
-$(function() {
-  init();
+
+
+$('document').ready(function () {
+  //this waits for the DOM to be fully loaded before doing this. 
+  //shorthand for this is $(function () { .... }), like this:
+  /* 
+  $(function () {
+    init();
+  }); 
+  */
+
 });

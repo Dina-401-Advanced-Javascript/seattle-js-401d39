@@ -1,6 +1,43 @@
 'use strict';
 
 const mongoose = require('mongoose');
+const FoodCollection = require('./models/food-collection');
+const Food = require('./models/food-model');
+const food = new FoodCollection();
+  
+const MONGOOSE_URI = 'mongodb://localhost:27017/foodtest';
+const options = { useNewUrlParser: true, useUnifiedTopology: true };
+
+mongoose.connect(MONGOOSE_URI, options);
+
+const doDataStuff = async () => {
+  let carrot = {
+    name: 'Carrot',
+    calories: 25,
+    type: 'VEGETABLE'
+  };
+
+  
+  let newFood = await food.create(carrot);//save();
+  console.log('Food Created', food);
+
+  //get one food
+  let oneFood = await food.get(food._id); //Food.findById(food._id);
+  console.log('One food', oneFood);
+
+  
+  //get all things from a collection
+  let allFood = await Food.find();
+  console.log('All Food', allFood);
+
+  //disconnect from Mongo
+  mongoose.disconnect();
+};
+
+doDataStuff();
+
+/*
+const mongoose = require('mongoose');
 const Food = require('./models/food-model');
 
 const MONGOOSE_URI = 'mongodb://localhost:27017/food';
@@ -35,3 +72,4 @@ const doDataStuff = async () => {
 };
 
 doDataStuff();
+*/

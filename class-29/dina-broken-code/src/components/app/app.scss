@@ -1,0 +1,26 @@
+body {
+  background-color: whitesmoke;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#history {
+  float: left;
+  min-width: 20%;
+  max-width: 30%;
+  text-align: left;
+  outline: 1px solid grey;
+  padding-left: 5px;
+  padding-bottom: 20px;
+  word-wrap: break-word;
+  margin-top: 5px;
+}
+
+#content{
+  float: left;
+  min-width: 69%;
+  max-width: 79%;
+}
+
